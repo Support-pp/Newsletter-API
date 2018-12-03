@@ -1,1 +1,1 @@
-web: newsletterAPI
+web: Newsletter-API
