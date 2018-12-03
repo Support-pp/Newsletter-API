@@ -34,7 +34,7 @@ type EmailResponse struct {
 
 func main() {
 	fmt.Println("[Newsletter] Start Support++ newsletter API. \n Port :: " + os.Getenv("PORT"))
-	ratelimit = rl.CreateLimit("1r/m,spam:3,block:14d")
+	ratelimit = rl.CreateLimit("1r/s,spam:3,block:14d")
 	router := mux.NewRouter()
 
 	router.Handle("/newsletter",
